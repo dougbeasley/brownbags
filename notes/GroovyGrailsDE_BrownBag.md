@@ -1,39 +1,37 @@
 # Groovy Grails and the Donation Engine
 
-## Java
+- Java
+	- Servlet Container
+	- Servlets
+	- JSPs
+	- Web App
 
-## Servlet Container
+- Spring Framework
+	- IoC
+	- MVC
+	- AOP
 
-### Servlets
+- Tooling
+	- Ant
+	- Ivy
+	- Maven
+	- Gradle
 
-### JSPs
+- Grails
+	- Anatomy and Artifacts
+	- ORM
+	- Things I don't like
 
-## Spring Framework
+- Groovy
+	- Cool things I've found
 
-### IoC
+- Donation Engine
+	- Model
+	- API
 
-### MVC
-
-### AOP
-
-## Grails
-
-### Anatomy
-
-### Things I don't like
-
-## Groovy
-
-### Cool things I've found
-
-## Donation Engine
-
-### Model
-
-### API
-
-### Future Thoughts
-
+- Future Thoughts
+	- Angular FE via Form auth
+	- OAuth2
 
 
  
