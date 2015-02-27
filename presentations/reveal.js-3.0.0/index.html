@@ -72,10 +72,45 @@
 						<li>Applets</li>
 						<li>Servlets*</li>
 					</ul>
+					<p>
+						<small>Servlet life-cycle, session management, etc</small>
+					</p>
 				</section>
 
+				<section>
+					<section>
+						<h2>Servlets</h2>
+						<strong>Request & Response</strong>
+						<p>Client-Server, web based, a funny obscure analogy</p> 
+					</section>
+					<section>
+						<strong>javax.servlet.Servlet</strong>
 
+						<pre><code data-trim contenteditable>
+package javax.servlet;
 
+import java.io.IOException;
+
+public interface Servlet {
+
+    public void init(ServletConfig config) throws ServletException;
+    
+    public ServletConfig getServletConfig();
+
+    public void service(ServletRequest req, ServletResponse res)
+     throws ServletException, IOException;
+     
+    public String getServletInfo();
+
+    public void destroy();
+}
+	                	</code></pre>
+                	</section>
+	                <section>
+						<strong>javax.servlet.http.HttpServlet</strong>						
+						<p>Most of the methods are implemented for you in this class</p>
+					</section>
+				</section>
 
 
 
