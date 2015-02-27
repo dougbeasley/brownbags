@@ -112,6 +112,117 @@ public interface Servlet {
 					</section>
 				</section>
 
+				<section>
+					<section>
+						<h2>Introducing the Spring Framework</h2>
+						<p><strong>IoC Container</strong></p>
+
+						<ul>
+							<li>AOP</li>
+							<li>MVC</li>
+							<li>Support strucutres</li>
+						</ul>
+
+						<p><small>Based on classic design patterens in an effort to reduce bolierplate, heavy use of dependency injection</small></p>
+					</section>
+					<section>
+						<h3>Inversion of Control</h3>
+						<ul>
+							<li>To decouple the execution of a task from implementation.</li>
+							<li>To focus a module on the task it is designed for.</li>
+							<li>To free modules from assumptions about how other systems do what they do and instead rely on contracts.</li>
+							<li>To prevent side effects when replacing a module.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>String MVC</h3>
+						<ul>
+							<li>ContextLoaderListener</li>
+							<li>DispatcherServlet</li>
+						</ul>
+						<p><small>Ultimately configured in the deployment descriptor (web.xml).  
+						Still allows for n-tier architecture, built on top of spring</small></p>
+					</section>
+					<section>
+						<pre><code data-trim contenteditable>
+<web-app>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/root-context.xml</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value></param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+</web-app>
+						</code></pre>
+					</section>
+					<section>
+						<p>Spring boot can do alot of this for you</p>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<p>Why all this talk about Java and spring?</p>
+					<section>
+					<section>
+						<h1>Grails</h1>
+						<p>Grails is an opinionated Spring MVC Stack</p>
+					</section>
+				</section>
+
+
+				<section>
+					<h3>Artefacts</h3>
+					<ul>
+						<li>Controllers</li>
+						<li>Domain Classes</li>
+						<li>Services</li>
+						<li>Taglibs</li>
+						<li>Views</li>
+					</ul>
+					<p>Promotes n-tier architecture</p>
+				</section>
+
+				<section>
+					<section>
+						<p>ORM for grails...  GORM!</p>
+						<p>Based on Hibernate</p>
+					</section>
+					<section>
+						<p>Testing with Spock</p>
+					</section>
+					<section>
+						<p>Migrations</p>
+						<p>Based on Liquidbase</p>
+					</section>
+				</section>
+
+				<section>
+					<h3>Groovy</h3>
+					<ul>
+
+					</ul>
+
+				</section>
+
 
 
 				<!-- Example of nested vertical slides -->
