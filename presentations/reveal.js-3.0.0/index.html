@@ -204,14 +204,14 @@ public interface Servlet {
 				<section>
 					<section>
 						<p>ORM for grails...  GORM!</p>
-						<p>Based on Hibernate</p>
+						<p>Based on <a href="http://hibernate.org/">Hibernate</a></p>
 					</section>
 					<section>
-						<p>Testing with Spock</p>
+						<p>Testing with <a href="https://spock-framework.readthedocs.org/en/latest/">Spock</a></p>
 					</section>
 					<section>
 						<p>Migrations</p>
-						<p>Based on Liquidbase</p>
+						<p>Based on <a href="http://www.liquibase.org/index.html">Liquidbase</a></p>
 					</section>
 				</section>
 
@@ -243,6 +243,16 @@ def names = fetchNames('funny')
 names.each { println "Hello my name is $it" }
 						</code></pre>
 					</section>
+				</section>
+
+				<section>
+					<h3>In action</h3>
+						<pre><code data-trim contenteditable>
+#Install grails, usually with the GVM
+grails create-app brownbag
+cd brownbag
+grails create-domain-class BrownBag
+						</code></pre>
 				</section>
 
 			</div>
